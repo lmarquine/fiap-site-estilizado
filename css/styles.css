@@ -270,6 +270,30 @@ a {
     padding: 50px;
 }
 
+.control-input {
+    display: flex;
+    align-items: center;
+}
+
+.btn.action.submit {
+    border: 2px solid var(--color-secondary);
+    border-radius: 5px;
+    margin-left: 10px;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    height: 45px;
+    padding: 10px 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn.action.submit:hover {
+    color: var(--color-secondary);
+    background: var(--color-white);
+    border: 2px solid var(--color-secondary);
+}
+
 @media only screen and (max-width: 767px) {
     #btn-menu,
     .slide-arrow {
@@ -341,5 +365,13 @@ a {
 
     #newsletter {
         padding: 40px 0;
+    }
+
+    .control-input {
+        flex-direction: column;
+    }
+
+    .control-input .btn {
+        margin: 10px 0;
     }
 }
